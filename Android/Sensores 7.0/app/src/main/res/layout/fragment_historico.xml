@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/card_selector"
+    tools:context="venicius.sensores.fragments.Historico">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperatura"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchartTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20sp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Umidade"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchartUmidade"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presenca"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchartMovimento"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chamas"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchartChamas"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luz"
+                android:textSize="20sp"
+                android:layout_margin="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barchartLuz"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="20sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

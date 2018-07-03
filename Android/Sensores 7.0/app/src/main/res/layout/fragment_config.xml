@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_selector"
+    tools:context="venicius.sensores.fragments.Config">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="18sp">
+
+            <TextView
+                android:id="@+id/tvSensoresconfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+
+                android:text="Notificações:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switch_temperatura"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18sp"
+                android:layout_weight="2.80"
+                android:padding="5sp"
+                android:text="Temperatura"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_umidade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18sp"
+                android:layout_weight="4.95"
+                android:padding="5sp"
+                android:text="Umidade"
+                android:textSize="18sp" />
+
+
+            <Switch
+                android:id="@+id/switch_chamas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18sp"
+                android:layout_weight="4.95"
+                android:padding="5sp"
+                android:text="Chamas"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_luz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18sp"
+                android:layout_weight="4.95"
+                android:padding="5sp"
+                android:text="Luz"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_presenca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18sp"
+                android:layout_weight="4.95"
+                android:padding="5sp"
+                android:text="Presença"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_voz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_weight="4.95"
+                android:padding="5sp"
+                android:text="Voz"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="30sp"
+                android:drawableLeft="@drawable/ic_content_save_black_24dp"
+                android:text="Salvar"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

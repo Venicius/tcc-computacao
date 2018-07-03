@@ -1,0 +1,292 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="venicius.sensores.fragments.Sensores"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_selector">
+
+
+
+            <!-- Temperatura -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_sensor_temperatura"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/icon_temperatura"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/valor_sensor_temperatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_sensor_temperatura"
+                        android:text="-----"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/nome_sensor_temperatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valor_sensor_temperatura"
+
+                        android:text="Temperatura"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/update_sensor_temperatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="--/--/-- --h-- " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Umidade -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_sensor_umidade"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_margin="5sp"
+                    android:src="@drawable/icon_umidade" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/valor_sensor_umidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_sensor_umidade"
+                        android:text="-----"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/nome_sensor_umidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valor_sensor_umidade"
+
+                        android:text="Umidade"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/update_sensor_umidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="--/--/-- --h-- " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- presenca -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_sensor_presenca"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/icon_presenca" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/valor_sensor_presenca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_sensor_presenca"
+                        android:text="-----"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/nome_sensor_presenca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valor_sensor_presenca"
+
+                        android:text="Presença"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/update_sensor_presenca"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="--/--/-- --h-- " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- chamas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_sensor_chamas"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_margin="5sp"
+                    android:src="@drawable/icon_chamas"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/valor_sensor_chamas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_sensor_chamas"
+                        android:text="-----"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/nome_sensor_chamas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valor_sensor_chamas"
+
+                        android:text="Chamas"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/update_sensor_chamas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="--/--/-- --h-- " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- luz -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_sensor_luz"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_margin="5sp"
+                    android:src="@drawable/icon_luz" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/valor_sensor_luz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_sensor_luz"
+                        android:text="-----"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/nome_sensor_luz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valor_sensor_luz"
+
+                        android:text="Luz"
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/update_sensor_luz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="--/--/-- --h-- " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
